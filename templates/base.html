@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        footer{
+            background: green;
+            color:white;
+            padding-top:5px;
+            width: 100%;
+            height: 30px;
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--THE PAGE WHERE EVERY OTHER PAGE ARE GONNA USE IT-->
+    <!--IT IS CALLED TEMPLATE INHERITANCE-->
+    {%include 'navbar.html'%}
+    {% block content %}
+      Replace me
+    {% endblock %}
+
+    {% block content_main %}
+     <footer> This content is not replaceable. This text include &copy; copyright claim</footer>
+    {% endblock %}
+</body>
+</html>
