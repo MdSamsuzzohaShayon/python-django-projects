@@ -13,5 +13,7 @@
  - `python3 mayage.py runserver 9000`
  - `python3 manage.py startapp playground`
 
-
+### Debuging django app
+ - [django debug toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/)
+ - `pipenv install django-debug-toolbar`
  
