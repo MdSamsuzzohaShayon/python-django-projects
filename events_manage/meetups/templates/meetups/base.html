@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>{% block title %}All Meetups{% endblock %}</title>
+    <link href="{% static 'css/semantic.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+    {% block site_css %}{%endblock%}
+</head>
+<body>
+<header>
+    <div class="ui menu">
+        <div class="header item"><a href="/meetups">Django Meetups</a></div>
+        <a class="item" href="#">Home</a>
+        <a class="item" href="#">About</a>
+        <a class="item" href="#">Contact</a>
+    </div>
+</header>
+<div class="ui container">
+    <div class="meetup-heading">
+        <h2 class="ui header huge centered">{% block main_heading %}{% endblock %}</h2>
+        {% block header_content %}{% endblock %}
+    </div>
+    {% block body %}{% endblock %}
+</div>
+
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/semantic.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

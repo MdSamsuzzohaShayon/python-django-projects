@@ -1,17 +1,10 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-          name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>All meetups</title>
-    <link href="{% static 'css/semantic.min.css' %}" rel="stylesheet">
-    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+{% extends 'meetups/base.html' %}
 
-</head>
-<body>
+{% load static %}
+{% block title %}All meetups home{% endblock %}
+{% block site_css %} <link href="{% static 'css/home.css' %}" rel="stylesheet"> {% endblock %}
+
+
 <!--<h1>All Meetups</h1>-->
 <!--{% if show_meetups %}-->
 <!--{% for meetup_item in meetups %}-->
@@ -22,46 +15,16 @@
 <!--{% endif %}-->
 
 
-<header>
-    <div class="ui menu">
-        <div class="header item"><a href="/meetups">Django Meetups</a></div>
-        <a class="item" href="#">Home</a>
-        <a class="item" href="#">About</a>
-        <a class="item" href="#">Contact</a>
-    </div>
-</header>
-<div class="ui container">
-    <div class="meetup-heading">
-        <h2 class="ui header huge centered">Welcome</h2>
-        <p class="ui header tiny centered" >Join our meet up</p>
-    </div>
-    <div class="meet-ups">
-        <h2 class="ui centered header">Upcoming Meetups</h2>
-        {% for meetup_item in meetups %}
-        <div class="ui centered teal card">
-            <div class="image meetup-summery">
-                <img src="">
-            </div>
-            <div class="content">
-                <a class="header">{{meetup_item.title}}</a>
-                <div class="description">
-                    {{meetup_item.location}}
-                </div>
-            </div>
-            <div class="extra content">
-                    <div class="ui basic green button">
-                        <a href="{% url 'meetup-detail' meetup_item.slug %}">More details</a>
-                    </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
+{% block main_heading %} Welcome {% endblock %}
+{% block header_content %}<p class="ui header tiny centered" >Join our meet up</p>{% endblock %}
+
+
+{% block body %}
+<div class="meet-ups">
+    <h2 class="ui centered header">Upcoming Meetups</h2>
+    {% for meetup_item in meetups %}
+        {% include 'meetups/includes/meetup-item.html' with title=meetup_item.title location=meetup_item.location %}
+    {% endfor %}
 </div>
+{% endblock %}
 
-
-<script src="{% static 'js/jquery.min.js' %}"></script>
-<script src="{% static 'js/semantic.min.js' %}"></script>
-<script src="{% static 'js/main.js' %}"></script>
-
-</body>
-</html>

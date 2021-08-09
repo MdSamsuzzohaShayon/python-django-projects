@@ -1,12 +1,12 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{meetup_title}}</title>
-</head>
-<body>
+{% extends 'meetups/base.html' %}
+{% block title %}{{meetup_title}}{% endblock %}
+{% block main_heading %} Meet Up Details {% endblock %}
+{% block header_content %}<p class="ui header tiny centered" > {{meetup_title}} </p>{% endblock %}
 
+
+
+
+{% block body %}
 img
 meet up location:
 address:
@@ -24,5 +24,5 @@ address:
     <h2>Jin us</h2>
     FORM
 </div>
-</body>
-</html>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+<div class="ui centered teal card">
+    <div class="image meetup-summery">
+        <img src="">
+    </div>
+    <div class="content">
+        <a class="header">{{ title }}</a>
+        <div class="description">
+            {{ location }}
+        </div>
+    </div>
+    <div class="extra content">
+        <div class="ui basic green button">
+            <a href="{% url 'meetup-detail' meetup_item.slug %}">More details</a>
+        </div>
+    </div>
+</div>
