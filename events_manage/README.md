@@ -16,5 +16,7 @@ python3 manage.py startapp meetups
  python3 manage.py makemigrations
  python3 manage.py migrate
 ```
+ - Create a admin `python3 manage.py createsuperuser`
+ - Username: shayon, password: 1234
 
 

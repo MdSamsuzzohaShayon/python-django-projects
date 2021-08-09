@@ -23,7 +23,7 @@
 <div class="meet-ups">
     <h2 class="ui centered header">Upcoming Meetups</h2>
     {% for meetup_item in meetups %}
-        {% include 'meetups/includes/meetup-item.html' with title=meetup_item.title location=meetup_item.location %}
+        {% include 'meetups/includes/meetup-item.html' with title=meetup_item.title location='meetup_item.location' slug=meetup_item.slug %}
     {% endfor %}
 </div>
 {% endblock %}

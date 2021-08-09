@@ -7,22 +7,39 @@
 
 
 {% block body %}
+{% if meetup_found %}
+
 img
+<br>
 meet up location:
+<br>
 address:
+<br>
 
 
-<div class="dtails">
+<div class="details">
     <h2>What's this meet up about?</h2>
-    <p>{{meetup_description}}</p>
+    <p>Title - {{meetup_title}}</p>
+    <p>Desc - {{meetup_description}}</p>
 </div>
 
 <footer>
     need more detail? please contact organizer (don't spam us :) )
 </footer>
-<div class="regestration">
+<div class="registration">
     <h2>Jin us</h2>
     FORM
 </div>
+
+{% else %}
+<div class="ui negative message">
+  <i class="close icon"></i>
+  <div class="header">
+    We're sorry we can't found any meetup
+  </div>
+  <p>Use a valid slug
+</p></div>
+{% endif %}
+
 
 {% endblock %}
