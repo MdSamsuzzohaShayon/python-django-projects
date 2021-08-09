@@ -3,21 +3,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>All meetups</title>
-    <link rel="stylesheet" href="{% static 'meetups/styles/base.css' %}">
+    <link href="{% static 'css/semantic.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+
 </head>
 <body>
-<h1>All Meetups</h1>
-{% if show_meetups %}
-    {% for meetup_item in meetups %}
-        <h2>{{ meetup_item.title }}</h2>
-    {% endfor %}
-{% else %}
-<p>No meetups</p>
-{% endif %}
+<!--<h1>All Meetups</h1>-->
+<!--{% if show_meetups %}-->
+<!--{% for meetup_item in meetups %}-->
+<!--<h2>{{ meetup_item.title }}</h2>-->
+<!--{% endfor %}-->
+<!--{% else %}-->
+<!--<p>No meetups</p>-->
+<!--{% endif %}-->
+
+
+<header>
+    <div class="ui menu">
+        <div class="header item"><a href="/meetups">Django Meetups</a></div>
+        <a class="item" href="#">Home</a>
+        <a class="item" href="#">About</a>
+        <a class="item" href="#">Contact</a>
+    </div>
+</header>
+<div class="ui container">
+    <div class="meetup-heading">
+        <h2 class="ui header huge centered">Welcome</h2>
+        <p class="ui header tiny centered" >Join our meet up</p>
+    </div>
+    <div class="meet-ups">
+        <h2 class="ui centered header">Upcoming Meetups</h2>
+        {% for meetup_item in meetups %}
+        <div class="ui centered teal card">
+            <div class="image meetup-summery">
+                <img src="">
+            </div>
+            <div class="content">
+                <a class="header">{{meetup_item.title}}</a>
+                <div class="description">
+                    {{meetup_item.location}}
+                </div>
+            </div>
+            <div class="extra content">
+                    <div class="ui basic green button">More details</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/semantic.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
 
 </body>
 </html>
