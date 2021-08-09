@@ -17,3 +17,18 @@ def index(request):
         }
     ]
     return render(request, 'meetups/index.html', {'show_meetups': True, 'meetups': meetups})
+
+
+
+# THIS MEET UP SLUG I PASSED IN URL TO GET SOME VALUE FROM URL
+# WHAT EVER WE PASS AFTER http://localhost:8000/meetups/a-first-meetup WE WILL GET VALUE LIKE A-FIRST-MEETUP
+def meetup_detail(request, meetup_slug):
+    # print(meetup_slug)
+    selected_meetup = {
+        'title': "First meet up",
+        'description': 'This is first meet up descriptions'
+    }
+    return render(request, 'meetups/meetup-details.html', {
+        'meetup_title': selected_meetup['title'],
+        'meetup_description' : selected_meetup['description']
+    })

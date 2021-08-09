@@ -49,7 +49,9 @@
                 </div>
             </div>
             <div class="extra content">
-                    <div class="ui basic green button">More details</div>
+                    <div class="ui basic green button">
+                        <a href="{% url 'meetup-detail' meetup_item.slug %}">More details</a>
+                    </div>
             </div>
         </div>
         {% endfor %}
