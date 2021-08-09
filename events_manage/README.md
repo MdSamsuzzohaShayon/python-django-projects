@@ -11,4 +11,10 @@ cd events_manage/
 python3 manage.py startapp meetups
 ```
 
+-Structire database and execute
+```
+ python3 manage.py makemigrations
+ python3 manage.py migrate
+```
+
 
