@@ -2,9 +2,18 @@
     padding: 0;
     margin: 0;
 }
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: url('https://c.pxhere.com/photos/78/88/dji_drone_drone_shot_iceland_landscape_mountain_nature_travel-1645283.jpg') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .meetup-heading{
 margin: 5rem 0;
 
 }
 .card{
-width: 500px !important;}
+width: 500px !important;
+}
