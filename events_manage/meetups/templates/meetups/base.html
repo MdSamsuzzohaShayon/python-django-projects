@@ -12,8 +12,9 @@
     {% block site_css %}{%endblock%}
 </head>
 <body>
+<div id="wrapper" style="background-image:url({% static 'img/bg.jpg' %})">
 <header>
-    <div class="ui menu">
+    <div class="ui menu scalable inverted black">
         <div class="header item"><a href="/meetups">Django Meetups</a></div>
         <a class="item" href="#">Home</a>
         <a class="item" href="#">About</a>
@@ -22,11 +23,13 @@
 </header>
 <div class="ui container">
     <div class="meetup-heading">
-        <h2 class="ui header huge centered">{% block main_heading %}{% endblock %}</h2>
+        <h2 class="ui header huge centered white">{% block main_heading %}{% endblock %}</h2>
         {% block header_content %}{% endblock %}
     </div>
     {% block body %}{% endblock %}
 </div>
+</div>
+
 
 
 <script src="{% static 'js/jquery.min.js' %}"></script>

@@ -16,12 +16,12 @@
 
 
 {% block main_heading %} Welcome {% endblock %}
-{% block header_content %}<p class="ui header tiny centered" >Join our meet up</p>{% endblock %}
+{% block header_content %}<p class="ui header tiny centered white" >Join our meet up</p>{% endblock %}
 
 
 {% block body %}
 <div class="meet-ups">
-    <h2 class="ui centered header">Upcoming Meetups</h2>
+    <h2 class="ui centered header white">Upcoming Meetups</h2>
     {% for meetup_item in meetups %}
         {% include 'meetups/includes/meetup-item.html' with title=meetup_item.title location='meetup_item.location' slug=meetup_item.slug image=meetup_item.image.url %}
     {% endfor %}

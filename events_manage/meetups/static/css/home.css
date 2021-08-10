@@ -1,3 +1,6 @@
 .meetup-heading{
-    border: 1px solid green;
+   /*  border: 1px solid green; */
+}
+.meetup-summery img{
+    height: 300px !important;
 }
