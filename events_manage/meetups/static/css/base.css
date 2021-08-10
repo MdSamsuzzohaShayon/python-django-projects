@@ -10,10 +10,15 @@
     background-position: center;
 }
 .meetup-heading{
-margin: 5rem 0;
+    margin: 5rem 0;
 }
 .card{
-width: 500px !important;
+    width: 500px !important;
+}
+.card .image img{
+    height: 200px !important;
+    object-fit: cover;
+    object-position: top;
 }
 .white{
     color: white !important;

@@ -1,7 +1,8 @@
 {% extends 'meetups/base.html' %}
-{% block title %}{{meetup_title}}{% endblock %}
-{% block main_heading %} Meet Up Details {% endblock %}
-{% block header_content %}<p class="ui header tiny centered" > {{meetup_title}} </p>{% endblock %}
+{% block title %}{{meetup.title}}{% endblock %}
+
+{% block main_heading %} Meetup Details {% endblock %}
+{% block header_content %}<p class="ui header white tiny centered" > {{meetup.title}} </p>{% endblock %}
 
 
 
@@ -9,19 +10,42 @@
 {% block body %}
 {% if meetup_found %}
 
-img
-<br>
-meet up location:
-<br>
-address:
-<br>
+<!--<div class="ui segment teal">-->
+<!--    <img src="{{ meetup.image.url }}" alt="{{ meetup.title }}" class="ui centered large image">-->
+
+<!--    <br>-->
+<!--    <i class="location arrow icon"></i> {{ meetup.location.name }}-->
+<!--    <br>-->
+<!--    <br>-->
+<!--    <i class="address card icon"></i> {{ meetup.location.address }}-->
+<!--    <br>-->
 
 
-<div class="details">
-    <h2>What's this meet up about?</h2>
-    <p>Title - {{meetup_title}}</p>
-    <p>Desc - {{meetup_description}}</p>
+<!--    <div class="details">-->
+<!--        <h2>What's this meet up about?</h2>-->
+<!--        <p>Title - {{meetup.title}}</p>-->
+<!--        <p>Desc - {{meetup.description}}</p>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div class="ui centered card">
+  <div class="image">
+    <img src="{{ meetup.image.url }}" alt="{{ meetup.title }}" >
+  </div>
+  <div class="content">
+       <div class="header">{{meetup.title}}</div>
+      <div class="meta"><i class="location arrow icon"></i> {{ meetup.location.name }}</div>
+      <div class="meta"><i class="clock outline icon"></i> {{ meetup.date }}</div>
+      <div class="meta"><i class="inbox icon"></i> {{ meetup.organizer_email }}</div>
+      <div class="description">{{meetup.description}}</div>
+      <div class="ui list">
+          <div class="item">Name 1</div>
+          <div class="item">Name 2</div>
+          <div class="item">Name 3</div>
+      </div>
+  </div>
 </div>
+
 
 <footer>
     need more detail? please contact organizer (don't spam us :) )

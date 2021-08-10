@@ -7,8 +7,8 @@ from .models import Meetup, Location, Participant
 
 # GETTING TWO COLUMNS IN ADMIN MEETUPS
 class MeetupAdmin(admin.ModelAdmin):
-    list_display = ('title', 'slug')
-    list_filter = ('location',)  # MAKE A FILTER ON THE RIGHT
+    list_display = ('title', 'date', 'location')
+    list_filter = ('location', 'date')  # MAKE A FILTER ON THE RIGHT
     prepopulated_fields = {'slug': ('title',)}
 
 
