@@ -1,0 +1,24 @@
+{% extends 'meetups/base.html' %}
+{% load static %}
+{% block title %}
+You registered successfully
+{% endblock %}
+
+{% block main_heading %}
+Thanks for singing in
+{% endblock %}
+
+
+{% block body %}
+<br><br><br>
+<div class="ui message centered">
+    <h2 class="header">You registered successfully</h2>
+    <p>Think you for sign up</p>
+    <p>Got question or can't make it? Please contract organizer</p>
+</div>
+<br>
+<div class="ui message centered">
+    <h2 class="header">Or course you can sign up for more than one meetup</h2>
+    <a href="/meetups" class="ui button teal" >Explore our meetups</a>
+</div>
+{% endblock %}
