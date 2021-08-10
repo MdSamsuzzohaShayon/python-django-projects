@@ -51,8 +51,15 @@
     need more detail? please contact organizer (don't spam us :) )
 </footer>
 <div class="registration">
-    <h2>Jin us</h2>
-    FORM
+    <h2>Join us</h2>
+    <form action="{% url 'meetup-detail' meetup.slug %}" method="POST" class="ui form">
+        {% csrf_token %}
+        {{form.as_ul}}
+        <div class="submit">
+            <button class="ui button teal" type="submit">Submit</button>
+        </div>
+    </form>
+
 </div>
 
 {% else %}
