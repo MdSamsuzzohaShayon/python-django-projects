@@ -1,5 +1,5 @@
 # Django meet-up
- - [tutorial](https://www.youtube.com/watch?v=rDnWnQzTvGo)
+ - [tutorial](https://www.youtube.com/watch?v=rDnWnQzTvGo),
 [Install postgres on linux mint](https://www.tecmint.com/install-postgresql-with-pgadmin4-on-linux-mint/)
   ```
   sudo apt-get update
