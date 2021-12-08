@@ -23,5 +23,19 @@
   sudo apt update && sudo apt upgrade -y
   ```
  - For the first time we need to set master password from postgres admin (pgadmin)
- - From pgadmin -> create a server -> name anything, connection give localhost -> 
+ - From pgadmin -> create a server -> name anything, connection give localhost ->
+ - Making requests 
+   ```
+   # GET ALL DATA 
+   curl -X GET http://localhost:8000/department
+    
+   # ADD NEW RECORD
+   curl -X POST 'http://localhost:8000/department' -H 'Content-Type: application/json' -d '{"DepartmentName": "Accounting"}'
+   
+   # UPDATE RECORD 
+   curl --location --request PUT 'http://localhost:8000/department' --header 'Content-Type: application/json' --data-raw '{ "DepartmentId": 3, "DepartmentName": "Business Administration"}'
+   
+   # DELETE RECORD
+   curl -X DELETE 'http://localhost:8000/department/3'
+   ```
 
