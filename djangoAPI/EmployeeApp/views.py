@@ -64,14 +64,19 @@ def employeeApi(request, id=0):
     
     
     elif request.method == "PUT":
+        
         employee_data = JSONParser().parse(request)
+        # print("ID - ", employee_data['EmployeeId'])
         employee = Employees.objects.get(EmployeeId=employee_data['EmployeeId'])
+        # employee = Employees.objects.get(EmployeeId=employee_data['EmployeeId'])
+        # print(employee)
         # MAPPING IT WITH NEW VALUES USING SERIALIZER
         employee_serializer = EmployeeSerializer(employee, data=employee_data)
+        # print("Check validity - ", employee_serializer.is_valid())
         if employee_serializer.is_valid():
             employee_serializer.save()
             return JsonResponse("Updated successfully", safe=False)
-        return JsonResponse("Failed to add", safe=False)
+        return JsonResponse("Failed to Update", safe=False)
     
     
     elif request.method == "DELETE":
