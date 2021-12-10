@@ -37,5 +37,9 @@
    
    # DELETE RECORD
    curl -X DELETE 'http://localhost:8000/department/3'
+   
+   # UPLOAD FILE
+   curl --location --request POST 'http://localhost:8000/employee/savefile' --form 'file=@"/home/shayon/Pictures/75918306.jpg"'
    ```
+   
 
