@@ -1,7 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30f168f1-2fbe-4be0-a4ab-69986494b1e6" name="Default Changelist" comment="" />
+    <list default="true" id="30f168f1-2fbe-4be0-a4ab-69986494b1e6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/movie_ecom/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom/product/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom/product/migrations/0002_product.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom/product/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom/product/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom_vue/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom_vue/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom_vue/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom_vue/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom_vue/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom_vue/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom_vue/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom_vue/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom_vue/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom_vue/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom_vue/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom_vue/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom_vue/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom_vue/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom_vue/src/views/About.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_ecom_vue/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/EmployeeApp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_ecom/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/EmployeeApp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_ecom/product/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/EmployeeApp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_ecom/product/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/EmployeeApp/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/EmployeeApp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_ecom/movie_ecom/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/EmployeeApp/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/EmployeeApp/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/EmployeeApp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_ecom/product/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/EmployeeApp/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/EmployeeApp/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/movie_ecom/product/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/djangoAPI/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_ecom/product/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/djangoAPI/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_ecom/movie_ecom/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/djangoAPI/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_ecom/movie_ecom/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/djangoAPI/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_ecom/movie_ecom/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/djangoAPI/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_ecom/movie_ecom/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_ecom/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/photos/261808019_10160070194238598_5018971334440433692_n_TABAbVv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/photos/anonymous.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoAPI/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom/movie_ecom/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom/movie_ecom/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom/movie_ecom/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom/movie_ecom/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom/movie_ecom/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom/product/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom/product/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom/product/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom/product/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom/product/migrations/0002_product.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom/product/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom/product/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom/product/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom/product/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom_vue/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom_vue/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom_vue/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom_vue/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom_vue/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom_vue/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom_vue/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom_vue/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom_vue/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom_vue/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom_vue/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom_vue/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom_vue/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom_vue/src/store/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom_vue/src/views/About.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-django-vuejs/movie_ecom_vue/src/views/Home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-employee/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-employee/department.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-employee/employee.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-employee/home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-employee/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-employee/variables.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +136,7 @@
     <option name="height" value="1030" />
   </component>
   <component name="ProjectId" id="1wNsm8yOfR80Vjb4ysoTFVQbbB0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />

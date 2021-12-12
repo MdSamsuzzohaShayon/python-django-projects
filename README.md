@@ -1,45 +1,58 @@
-# Django meet-up
- - [tutorial](https://www.youtube.com/watch?v=rDnWnQzTvGo),
-[Install postgres on linux mint](https://www.tecmint.com/install-postgresql-with-pgadmin4-on-linux-mint/)
-  ```
-  sudo apt-get update
-  sudo apt install postgresql postgresql-contrib
-  sudo systemctl status postgres
-  sudo systemctl status postgresql
-  sudo pg_isready
-  sudo su postgres
-  psql
-  CREATE USER shayon WITH PASSWORD 'shayon';
-  ```
+# Django vue ecommerce
 
- - [Install pgadmin](https://www.pgadmin.org/download/pgadmin-4-apt/)
-  ```
-  sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
-  sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
-  ls /etc/apt/sources.list.d
-  sudo nano /etc/apt/sources.list.d/pgadmin4.list # CHANGE LINUX VERSION TO FOCAL
-  sudo apt update
-  sudo apt install pgadmin4
-  sudo apt update && sudo apt upgrade -y
-  ```
- - For the first time we need to set master password from postgres admin (pgadmin)
- - From pgadmin -> create a server -> name anything, connection give localhost ->
- - Making requests 
-   ```
-   # GET ALL DATA 
-   curl -X GET http://localhost:8000/department
-    
-   # ADD NEW RECORD
-   curl -X POST 'http://localhost:8000/department' -H 'Content-Type: application/json' -d '{"DepartmentName": "Accounting"}'
-   
-   # UPDATE RECORD 
-   curl --location --request PUT 'http://localhost:8000/department' --header 'Content-Type: application/json' --data-raw '{ "DepartmentId": 3, "DepartmentName": "Business Administration"}'
-   
-   # DELETE RECORD
-   curl -X DELETE 'http://localhost:8000/department/3'
-   
-   # UPLOAD FILE
-   curl --location --request POST 'http://localhost:8000/employee/savefile' --form 'file=@"/home/shayon/Pictures/75918306.jpg"'
-   ```
-   
+ - [tutorials](https://www.youtube.com/watch?v=Yg5zkd9nm6w&t=3476s)
+ - make project and setup project with virtual environment
+```
+mkdir python-django-vuejs
+cd python-django-vuejs/
+ls
+git init
+pip install virtualenv
+virtualenv environment_3_8_1
+source environment_3_8_1/bin/activate
+```
+
+ - Install all essential package or dependencies
+```
+pip install django
+python3 -m pip install --upgrade pip
+pip install django
+pip install django-rest-framework
+pip install django-cors-headers
+pip install djoser
+pip install pillow
+pip install stripe
+```
+
+ - create ne django project `django-admin startproject movie_ecom`
+ - initialize database
+```
+pip list
+pip freeze > requirements.txt 
+ls
+cd movie_ecom/
+echo "initilize database"
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
+ - creating super user for admin
+```
+python3 manage.py createsuperuser
+# username - admin
+# password - 1234
+```
+ - __http://localhost:8000/admin__
+ - Install and setup vue js
+```
+vue create movie_ecom_vue
+cd movie_ecom_vue/
+npm install axios
+npm audit fix
+npm install bootstrap
+npm run serve
+```
+ - 
+
+
+
 
