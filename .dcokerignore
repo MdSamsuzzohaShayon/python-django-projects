@@ -1,1 +1,8 @@
 /virtual-env
+.env
+.dbdata
+.gitignore
+.git
+docker-compose.yml
+Dockerfile
+README.md

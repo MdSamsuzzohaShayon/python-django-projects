@@ -10,3 +10,20 @@ services:
       - "8000:8000"
     volumes:
       - .:/app
+    depends_on:
+      - db # this means db container must run first
+
+  db:
+    image: mysql:5.7.22
+    restart: always
+    env_file:
+      - ./.env
+#    environment:
+#      MYSQL_DATABASE: admin
+#      MYSQL_USER: root
+#      MYSQL_PASSWORD: root
+#      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - .dbdata:/var/lib/mysql  # all files will be reflected here in db data
+    ports:
+      - 33066:3306

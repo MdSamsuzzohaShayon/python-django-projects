@@ -4,7 +4,7 @@
     <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredPackages">
         <value>
-          <list size="122">
+          <list size="126">
             <item index="0" class="java.lang.String" itemvalue="greenlet" />
             <item index="1" class="java.lang.String" itemvalue="PyYAML" />
             <item index="2" class="java.lang.String" itemvalue="ufw" />
@@ -127,6 +127,10 @@
             <item index="119" class="java.lang.String" itemvalue="command-not-found" />
             <item index="120" class="java.lang.String" itemvalue="ipfshttpclient" />
             <item index="121" class="java.lang.String" itemvalue="pyxattr" />
+            <item index="122" class="java.lang.String" itemvalue="mysqlclient" />
+            <item index="123" class="java.lang.String" itemvalue="django-mysql" />
+            <item index="124" class="java.lang.String" itemvalue="Django" />
+            <item index="125" class="java.lang.String" itemvalue="pike" />
           </list>
         </value>
       </option>
