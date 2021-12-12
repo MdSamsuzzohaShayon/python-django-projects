@@ -1,58 +1,27 @@
 # Django vue ecommerce
 
- - [tutorials](https://www.youtube.com/watch?v=Yg5zkd9nm6w&t=3476s)
- - make project and setup project with virtual environment
+ - [tutorials](https://www.youtube.com/watch?v=y69VDOczkik)
+ - Installation
 ```
-mkdir python-django-vuejs
-cd python-django-vuejs/
-ls
-git init
-pip install virtualenv
-virtualenv environment_3_8_1
-source environment_3_8_1/bin/activate
+    pip install djangorestframework
+    pip install Django
+    sudo apt-get install python3-dev default-libmysqlclient-dev build-essential
+    pip install mysqlclient
+    pip install django-mysql
+    pip install django-cors-headers
+    pip install pike
 ```
-
- - Install all essential package or dependencies
+ - Docker commands
 ```
-pip install django
-python3 -m pip install --upgrade pip
-pip install django
-pip install django-rest-framework
-pip install django-cors-headers
-pip install djoser
-pip install pillow
-pip install stripe
+    sudo docker-compose up --build -d
+    sudo docker ps -a
+    sudo docker logs django-microservice
+    sudo docker-compose down -v
+    sudo docker ps -a
+    sudo docker images
+    sudo docker image rm 186215183cfc -f
+    sudo docker images 
+    sudo docker image rm django-microservice-image -f
+    sudo docker-compose up --build -d
 ```
-
- - create ne django project `django-admin startproject movie_ecom`
- - initialize database
-```
-pip list
-pip freeze > requirements.txt 
-ls
-cd movie_ecom/
-echo "initilize database"
-python3 manage.py makemigrations
-python3 manage.py migrate
-```
- - creating super user for admin
-```
-python3 manage.py createsuperuser
-# username - admin
-# password - 1234
-```
- - __http://localhost:8000/admin__
- - Install and setup vue js
-```
-vue create movie_ecom_vue
-cd movie_ecom_vue/
-npm install axios
-npm audit fix
-npm install bootstrap
-npm run serve
-```
- - 
-
-
-
-
+ 
