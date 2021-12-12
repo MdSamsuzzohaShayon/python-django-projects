@@ -15,15 +15,15 @@ services:
 
   db:
     image: mysql:5.7.22
+    container_name: "django-ms-db"
     restart: always
-    env_file:
-      - ./.env
-#    environment:
-#      MYSQL_DATABASE: admin
-#      MYSQL_USER: root
-#      MYSQL_PASSWORD: root
-#      MYSQL_ROOT_PASSWORD: root
+    environment:
+      MYSQL_DATABASE: admin
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
     volumes:
-      - .dbdata:/var/lib/mysql  # all files will be reflected here in db data
+      - .dbdata:/var/lib/mysql
+      # all files will be reflected here in db data
     ports:
-      - 33066:3306
+      - "3307:3306"
