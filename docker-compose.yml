@@ -4,26 +4,39 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: "django-microservice"
-    image: "django-microservice-image"
+    container_name: django-microservice
+    image: django-microservice-image
     ports:
-      - "8000:8000"
+      - 8000:8000
     volumes:
       - .:/app
+      - /virtual-env
     depends_on:
       - db # this means db container must run first
+      - phpmyadmin
 
   db:
-    image: mysql:5.7.22
-    container_name: "django-ms-db"
+    image: mysql:5.7
+    container_name: django-mysql
     restart: always
     environment:
-      MYSQL_DATABASE: admin
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root
-      MYSQL_ROOT_PASSWORD: root
+      - MYSQL_DATABASE=django-ms-db
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=admin
+      - MYSQL_ROOT_PASSWORD=root
+#      - MYSQL_ALLOW_EMPTY_PASSWORD= true
+
     volumes:
       - .dbdata:/var/lib/mysql
       # all files will be reflected here in db data
     ports:
-      - "3307:3306"
+      - 3307:3306
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: django-phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
+

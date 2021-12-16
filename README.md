@@ -24,4 +24,12 @@
     sudo docker image rm django-microservice-image -f
     sudo docker-compose up --build -d
 ```
+ - Connect to MySQL Database (take few minutes to start mysql) `mysql -h localhost -P 3307 --protocol=tcp -u admin -p`
+ - Interact with container `sudo docker exec -it django-microservice bash`
+ - Create new app from container `python manage.py startapp products`
+ - phpmyadmin connection 
+    - server : db
+    - username: admin
+    - password: admin
+ - 
  
