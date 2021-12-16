@@ -24,11 +24,7 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="7f054655-36ba-44c3-90dc-fdbef1681f53">
-        <schema name="django-ms-db" object-types="table, view, procedure, function, constraint, index, column, dataset trigger" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="dbe70a0a-c17e-4e6c-97d9-27e81457ba5f">
@@ -43,9 +39,7 @@
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="dbe70a0a-c17e-4e6c-97d9-27e81457ba5f" object-ref="consoles/Connection" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="dbe70a0a-c17e-4e6c-97d9-27e81457ba5f" />

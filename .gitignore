@@ -1,5 +1,4 @@
-/virtual-env
-.env
-db.sqlite3
-.dbdata
-.bd_data
+/admin_panel/virtual-env
+/admin_panel/.env
+/admin_panel/db.sqlite3
+/admin_panel/.dbdata
