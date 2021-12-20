@@ -31,5 +31,18 @@
     - server : db
     - username: admin
     - password: admin
- - 
+
+
+### Flask App
+ - Run flask app `python3 filename.py` By default flask app runs on port number `5000`
+ - Data migration in flask with MySQL `python3 manager.py db --help` (*Setup commands from manager.py file before running the command*)
+ - Creates a new migration repository `python3 manager.py db init`
+ - `sudo docker exec -it 62913dd99122 bash` go to container and migrate to the database `python manager.py db migrate`
+ - `python manager.py db upgrade` once you upgrade you  can see all available tables
+ - GO to this [site](https://www.cloudamqp.com/) and login/register -> create an instance
+ - Copy AMQP url -> 
+
+
+Time 57:00
+
  

@@ -1,7 +1,7 @@
 pytz
+pika==1.2.0
 Django==4.0
 djangorestframework==3.12.4
 mysqlclient==2.1.0
 django-mysql==4.3.0
 django-cors-headers==3.10.1
-pike==0.1.1

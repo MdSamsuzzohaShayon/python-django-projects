@@ -4,35 +4,32 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: admin
-    image: admin-image
+    container_name: flask-microservice
+    image: flask-microservice-image
     ports:
-      - 8000:8000
+      - 5000:5000
     volumes:
       - ./:/app
       - /virtual-env
     depends_on:
-      - "db" # this means db container must run first
+      - db # this means db container must run first
       - phpmyadmin
 
   db:
     image: mysql:5.7
-    container_name: django-mysql
+    container_name: mysql
     restart: always
-    environment:
-      - MYSQL_DATABASE=admin-django
-      - MYSQL_USER=admin
-      - MYSQL_PASSWORD=admin
-      - MYSQL_ROOT_PASSWORD=root
-#      - MYSQL_ALLOW_EMPTY_PASSWORD= true
+    env_file:
+      - ./.env
+
     volumes:
       - .dbdata:/var/lib/mysql
       # all files will be reflected here in db data
     ports:
-      - '3307:3306'
+      - 33067:3306
   phpmyadmin:
     image: phpmyadmin
-    container_name: django-phpmyadmin
+    container_name: phpmyadmin
     restart: always
     ports:
       - 8080:80

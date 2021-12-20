@@ -80,11 +80,17 @@ WSGI_APPLICATION = 'admin_panel.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django-ms-db',
+        'NAME': 'admin-django',
         'USER': 'admin',
         'PASSWORD': 'admin',
         'HOST': 'db',
         'PORT': '3306',
+        'CHARSET': 'utf8',
+        'COLLATION': 'utf8_bin',
+        'OPTIONS': {
+            'use_unicode' : True,
+            'init_command': 'SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED',
+        },
     }
 }
 
