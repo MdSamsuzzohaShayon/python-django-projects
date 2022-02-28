@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  django:
+    build:
+      context: .
+    image: docker-chatapp-image
+    container_name: docker-chatapp
+    volumes:
+      - ./:/app
+      - /virtual-env
+    ports:
+      - 8000:8000
+    environment:
+      - SOME_KEY=SOME_VAL
+
+
