@@ -1,2 +1,2 @@
-# Django meet-up
- - [tutorial](https://www.youtube.com/watch?v=t7DrJqcUviA&t=602s)
+# Django Chat Application
+ - [tutorial](https://www.youtube.com/watch?v=Wv5jlmJs2sU&list=PLLRM7ROnmA9EnQmnfTgUzCfzbbnc-oEbZ)

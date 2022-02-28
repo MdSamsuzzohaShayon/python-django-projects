@@ -1,7 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30f168f1-2fbe-4be0-a4ab-69986494b1e6" name="Default Changelist" comment="" />
+    <list default="true" id="30f168f1-2fbe-4be0-a4ab-69986494b1e6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/.idea/events_manage.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/events_manage/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/events_manage/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/events_manage/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/events_manage/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/events_manage/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/migrations/0002_remove_meetup_image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/migrations/0003_meetup_image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/migrations/0004_auto_20210810_0538.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/migrations/0005_auto_20210810_1557.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/migrations/0006_auto_20210810_1610.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/semantic.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/brand-icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/brand-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/brand-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/brand-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/brand-icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/icons.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/outline-icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/outline-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/outline-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/outline-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/outline-icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/images/flags.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/img/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/js/semantic.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/templates/admin/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/templates/meetups/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/templates/meetups/includes/meetup-item.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/templates/meetups/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/templates/meetups/meetup-details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/templates/meetups/registration-success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/meetups/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/uploads/images/20210126_171700.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_manage/uploads/images/inner-peace.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +103,9 @@
         <option value="$PROJECT_DIR$/products/forms.py" />
       </list>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
@@ -189,9 +256,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://C:/Program Files (x86)/Python37-32/Lib/site-packages/django/db/models/fields/__init__.py">
