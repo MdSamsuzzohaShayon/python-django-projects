@@ -1,19 +1,125 @@
-<!-- chat/templates/chat/room.html -->
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <title>Chat Room</title>
-</head>
-<body>
-    <textarea id="chat-log" cols="100" rows="20"></textarea><br>
-    <input id="chat-message-input" type="text" size="100"><br>
-    <input id="chat-message-submit" type="button" value="Send">
-    {{ room_name|json_script:"room-name" }}
-    <script>
-        const roomName = JSON.parse(document.getElementById('room-name').textContent);
+{% extends "chat/layout/main.html" %}
 
-        const chatSocket = new WebSocket(
+{% block title %} Chat room {% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+
+</style>
+<div class="room">
+    <!-- chat/templates/chat/room.html -->
+    <!--    <textarea id="chat-log" cols="100" rows="20"></textarea><br>-->
+    <!--    <input id="chat-message-input" type="text" size="100"><br>-->
+    <!--    <input id="chat-message-submit" type="button" value="Send">-->
+
+
+    <!--    CHAT START -->
+    <div class="ui grid chat-wrapper">
+        <!--        LEFT START -->
+        <div class="four wide column left-side">
+            <div class="ui vertical menu left-side-menu">
+                <a class="active teal item">
+                    Inbox
+                    <div class="ui teal left pointing label">1</div>
+                </a>
+                <a class="item">
+                    Spam
+                    <div class="ui label">51</div>
+                </a>
+                <a class="item">
+                    Updates
+                    <div class="ui label">1</div>
+                </a>
+                <div class="item">
+                    <div class="ui transparent icon input">
+                        <input type="text" placeholder="Search mail...">
+                        <i class="search icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        LEFT ENDS -->
+
+        <!--        RIGHT START -->
+        <div class="twelve wide column right-side">
+            <div class="ui teal segment">
+                <h4 class="username"></h4>
+            </div>
+            <!--            SENDER -->
+
+            <div class="ui grid message-grid">
+                <!--                SENDER -->
+                <div class="two column row">
+                    <div class="left floated column">
+                        <div class="left-message msg-container">
+                            <div class="person-img">
+                                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/lion-fire-logo-design-template-free-89daa14626ac403bd3cf6282036663ff_screen.jpg?ts=1572094154"
+                                     alt="" class="ui image">
+                            </div>
+                            <div class="content">
+                                <div class="ui message message-content">
+                                    We just updated our privacy policy here to better service our customers. We
+                                    recommend
+                                    reviewing the changes.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--                RECIVER-->
+                <div class="two column row">
+                    <div class="right floated column">
+                        <div class="right-message msg-container">
+                            <div class="person-img">
+                                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/lion-fire-logo-design-template-free-89daa14626ac403bd3cf6282036663ff_screen.jpg?ts=1572094154"
+                                     alt="" class="ui small image">
+                            </div>
+                            <div class="content">
+                                <div class="ui message message-content">
+                                    We just updated our privacy policy here to better service our customers. We
+                                    recommend
+                                    reviewing the changes.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br><br>
+            <div class="ui action input input-container">
+                <input type="text" class="input-box" placeholder="Send a message">
+                <button class="ui green right labeled icon button submit-btn">
+                    <i class="paper plane icon"></i>
+                    Send
+                </button>
+            </div>
+
+            <!--            RECEIVER-->
+        </div>
+        <!--        RIGHT ENDS -->
+    </div>
+    <!--CHAT ENDS -->
+
+    <br><br>
+
+
+    {{ room_name|json_script:"room-name" }}
+    <script src="{% static 'js/reconnect-websocket.js' %}"></script>
+    <script>
+        const inputBox = document.querySelector('.input-box');
+        const submitBtn = document.querySelector('.submit-btn');
+
+        const roomName = JSON.parse(document.getElementById('room-name').textContent);
+        const username = "{{username}}";
+        const titleUsername = document.querySelector('.username');
+        titleUsername.textContent = username;
+
+        const chatSocket = new ReconnectingWebSocket(
             'ws://'
             + window.location.host
             + '/ws/chat/'
@@ -23,28 +129,88 @@
 
         chatSocket.onmessage = function(e) {
             const data = JSON.parse(e.data);
-            document.querySelector('#chat-log').value += (data.message + '\n');
+            const message = data['message'];
+            const author = message['author']
+
+            // SEND ELEMENT
+            const rowTag = document.createElement('div');
+            rowTag.className = "two column row";
+
+            const columnTag = document.createElement('div');
+
+
+
+            const messageContainer = document.createElement('div');
+            messageContainer.setAttribute('class', "msg-container");
+
+            const personImageCon = document.createElement('div');
+            personImageCon.setAttribute('class', "person-img");
+
+            const imgTag = document.createElement('img');
+            imgTag.setAttribute('class', "ui small image");
+            imgTag.src = "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/lion-fire-logo-design-template-free-89daa14626ac403bd3cf6282036663ff_screen.jpg?ts=1572094154";
+
+            const contentTag = document.createElement('div');
+            contentTag.setAttribute('class', "content");
+
+            const msgContentTag = document.createElement('div');
+            msgContentTag.setAttribute('class',  "ui message message-content");
+            msgContentTag.textContent = message.content;
+
+            if(author === username){
+                columnTag.setAttribute('class', "right floated column");
+                messageContainer.classList.add("right-message");
+                msgContentTag.classList.add("green");
+            }else{
+                columnTag.setAttribute('class', "left floated column");
+                messageContainer.classList.add("left-message");
+            }
+
+
+            rowTag.appendChild(columnTag);
+            columnTag.appendChild(messageContainer);
+            personImageCon.appendChild(imgTag);
+            messageContainer.appendChild(personImageCon);
+            contentTag.appendChild(msgContentTag);
+            messageContainer.appendChild(contentTag);
+
+            document.querySelector('.message-grid').appendChild(rowTag);
         };
 
         chatSocket.onclose = function(e) {
             console.error('Chat socket closed unexpectedly');
         };
 
-        document.querySelector('#chat-message-input').focus();
-        document.querySelector('#chat-message-input').onkeyup = function(e) {
+        inputBox.focus();
+        inputBox.onkeyup = function(e) {
             if (e.keyCode === 13) {  // enter, return
                 document.querySelector('#chat-message-submit').click();
             }
         };
 
-        document.querySelector('#chat-message-submit').onclick = function(e) {
-            const messageInputDom = document.querySelector('#chat-message-input');
-            const message = messageInputDom.value;
-            chatSocket.send(JSON.stringify({
-                'message': message
+
+        submitBtn.addEventListener('click', (e)=>{
+        chatSocket.send(JSON.stringify({
+                'message': inputBox.value,
+                // 'command': 'fetch_message',
+                'command': 'new_message',
+                'form': username
             }));
-            messageInputDom.value = '';
-        };
+            inputBox.value = '';
+        });
+
+
+
+
+
+
+
+
+
     </script>
-</body>
-</html>
+</div>
+{% endblock %}
+
+
+
+

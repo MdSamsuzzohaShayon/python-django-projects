@@ -1,0 +1,53 @@
+.chat-wrapper{
+    min-height: 90vh;
+}
+.left-side{
+    width: 100%;
+}
+.left-side-menu{
+width: 100% !important;
+    height: 100% ;
+}
+
+.username::first-letter {
+    text-transform:capitalize;
+}
+
+.msg-container{
+    display: flex;
+    align-items: top;
+    flex-direction: row;
+}
+.right-message{
+    text-align: right;
+    flex-direction: row-reverse;
+}
+
+.person-img{
+    width: 20%;
+}
+.content{
+    width: 80%;
+}
+
+.message-content{
+    width: fit-content;
+}
+
+.person-img img{
+    width: 100% !important;
+}
+
+.right-message .message-content{
+    width: 100%;
+}
+
+
+.input-container{
+    width: 100%;
+}
+
+
+
+
+
