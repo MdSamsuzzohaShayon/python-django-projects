@@ -12,6 +12,8 @@ services:
       - 8000:8000
     environment:
       - SOME_KEY=SOME_VAL
+    depends_on:
+      - redis
 
   redis:
     image: redis:alpine
