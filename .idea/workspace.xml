@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30f168f1-2fbe-4be0-a4ab-69986494b1e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/02_django_channels/chatrooms/consumers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_django_channels/chatrooms/routing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_django_channels/chatrooms/templates/chatrooms/room.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_django_channels/chat/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_django_channels/chat/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_django_channels/chatrooms/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_django_channels/chatrooms/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_django_channels/chatrooms/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_django_channels/chatrooms/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_just_chat_app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/01_just_chat_app/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
