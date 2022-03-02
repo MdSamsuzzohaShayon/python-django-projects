@@ -6,8 +6,6 @@
 
 {% load static %}
 
-
-</style>
 <div class="room">
     <!-- chat/templates/chat/room.html -->
     <!--    <textarea id="chat-log" cols="100" rows="20"></textarea><br>-->
@@ -50,43 +48,6 @@
             <!--            SENDER -->
 
             <div class="ui grid message-grid">
-                <!--                SENDER -->
-                <div class="two column row">
-                    <div class="left floated column">
-                        <div class="left-message msg-container">
-                            <div class="person-img">
-                                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/lion-fire-logo-design-template-free-89daa14626ac403bd3cf6282036663ff_screen.jpg?ts=1572094154"
-                                     alt="" class="ui image">
-                            </div>
-                            <div class="content">
-                                <div class="ui message message-content">
-                                    We just updated our privacy policy here to better service our customers. We
-                                    recommend
-                                    reviewing the changes.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--                RECIVER-->
-                <div class="two column row">
-                    <div class="right floated column">
-                        <div class="right-message msg-container">
-                            <div class="person-img">
-                                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/lion-fire-logo-design-template-free-89daa14626ac403bd3cf6282036663ff_screen.jpg?ts=1572094154"
-                                     alt="" class="ui small image">
-                            </div>
-                            <div class="content">
-                                <div class="ui message message-content">
-                                    We just updated our privacy policy here to better service our customers. We
-                                    recommend
-                                    reviewing the changes.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
 
@@ -127,10 +88,25 @@
             + '/'
         );
 
-        chatSocket.onmessage = function(e) {
+        chatSocket.onopen = function (e) {
+            chatSocket.send(JSON.stringify({ 'command': 'fetch_messages' }));
+        }
+
+        chatSocket.onmessage = function (e) {
             const data = JSON.parse(e.data);
-            const message = data['message'];
-            const author = message['author']
+            if (data['command'] === "messages") {
+                for (let i = 0; i < data['messages'].length; i++) {
+                    createMessage(data['messages'][i])
+                }
+            } else if (data['command'] === 'new_message') {
+                createMessage(data['message']);
+            }
+        }
+
+        function createMessage(data) {
+            // const data = JSON.parse(e.data);
+            const message = data['content'];
+            const author = data['author'];
 
             // SEND ELEMENT
             const rowTag = document.createElement('div');
@@ -154,14 +130,14 @@
             contentTag.setAttribute('class', "content");
 
             const msgContentTag = document.createElement('div');
-            msgContentTag.setAttribute('class',  "ui message message-content");
-            msgContentTag.textContent = message.content;
+            msgContentTag.setAttribute('class', "ui message message-content");
+            msgContentTag.textContent = message;
 
-            if(author === username){
+            if (author === username) {
                 columnTag.setAttribute('class', "right floated column");
                 messageContainer.classList.add("right-message");
                 msgContentTag.classList.add("green");
-            }else{
+            } else {
                 columnTag.setAttribute('class', "left floated column");
                 messageContainer.classList.add("left-message");
             }
@@ -175,22 +151,22 @@
             messageContainer.appendChild(contentTag);
 
             document.querySelector('.message-grid').appendChild(rowTag);
-        };
+        }
 
-        chatSocket.onclose = function(e) {
+        chatSocket.onclose = function (e) {
             console.error('Chat socket closed unexpectedly');
         };
 
         inputBox.focus();
-        inputBox.onkeyup = function(e) {
+        inputBox.onkeyup = function (e) {
             if (e.keyCode === 13) {  // enter, return
                 document.querySelector('#chat-message-submit').click();
             }
         };
 
 
-        submitBtn.addEventListener('click', (e)=>{
-        chatSocket.send(JSON.stringify({
+        submitBtn.addEventListener('click', (e) => {
+            chatSocket.send(JSON.stringify({
                 'message': inputBox.value,
                 // 'command': 'fetch_message',
                 'command': 'new_message',
@@ -207,10 +183,7 @@
 
 
 
+
     </script>
 </div>
 {% endblock %}
-
-
-
-
