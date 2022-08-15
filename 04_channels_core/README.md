@@ -46,6 +46,6 @@ sudo docker compose down -v
  - Use [web socket king](https://websocketking.com/) for testing similer to postman for http
 - Create django superuser
 ```
-sudo docker compose run web python3 manage.py migrate
+`sudo docker compose run web python3 manage.py migrate`
 sudo docker compose run web python3 manage.py createsuperuser
 ```

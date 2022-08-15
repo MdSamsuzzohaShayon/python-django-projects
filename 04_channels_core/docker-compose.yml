@@ -1,7 +1,13 @@
 version: "3.9"
 
 services:
-  db:
+  postgres_db:
+    image: postgres
+    container_name: 'postgres_db_con'
+    restart: always
+    env_file:
+      - "./.env"
+  redis_db:
     image: redis
     container_name: "radis_db_con"
     volumes:
@@ -20,4 +26,5 @@ services:
     env_file:
       - "./.env"
     depends_on:
-      - db
+      - postgres_db
+      - redis_db

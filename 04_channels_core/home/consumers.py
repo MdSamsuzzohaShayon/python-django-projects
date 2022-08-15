@@ -1,5 +1,6 @@
 # This is not stateless
 from channels.generic.websocket import WebsocketConsumer
+from channels.generic.websocket import AsyncJsonWebsocketConsumer
 from asgiref.sync import async_to_sync
 import json
 
@@ -47,3 +48,27 @@ class TestConsumer(WebsocketConsumer):
         data = json.loads(event.get('value'))
         self.send(text_data=json.dumps({'payload': data}))
 
+
+class NewConsumer(AsyncJsonWebsocketConsumer):
+    async def connect(self):
+        self.room_name = "new_consumer"
+        self.room_group_name = "new_consumer_group"
+
+        await (self.channel_layer.group_add)(
+            self.room_group_name,
+            self.channel_name
+        )
+
+        await self.accept()
+        await self.send(text_data=json.dumps({"status": "connected to new async json consumer"}))
+
+    async def receive(self, text_data):
+        await self.send(text_data=json.dumps({"status": "Got data"}))
+
+    async def disconnect(self, code):
+        await print('Disconnected')
+
+
+    async def send_notification(self, event):
+        data = json.loads(event.get('value'))
+        await self.send(text_data=json.dumps({"payload": data}))

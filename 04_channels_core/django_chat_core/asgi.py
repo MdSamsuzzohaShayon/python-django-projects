@@ -20,7 +20,8 @@ application = get_asgi_application()
 
 # While consumers are valid ASGI applications, you don’t want to just write one and have that be the only thing you can give to protocol servers like Daphne. Channels provides routing classes that allow you to combine and stack your consumers (and any other valid ASGI application) to dispatch based on what the connection is.
 wp_patters = [
-    path('ws/test/', TestConsumer.as_asgi())
+    path('ws/test/', TestConsumer.as_asgi()),
+    path('ws/new/', NewConsumer.as_asgi()),
 ]
 
 application = ProtocolTypeRouter({
