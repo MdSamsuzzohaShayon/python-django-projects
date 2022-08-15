@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  db:
+    image: redis
+    volumes:
+      - ./data/db:/var/lib/redis/data
+    env_file:
+      - "./.env"
+  web:
+    build: .
+    image: "django_chat_image"
+    container_name: "django_chat_app_con"
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    env_file:
+      - "./.env"
+    depends_on:
+      - db

@@ -30,3 +30,12 @@ sudo docker exec -it django_channels_core_con sh
 ```
 sudo docker logs django_channels_core_con
 ```
+### Docker compose
+ - Build from docker compose
+```
+sudo docker compose up -d --build
+```
+ - Remove container
+```
+sudo docker compose down -v
+```

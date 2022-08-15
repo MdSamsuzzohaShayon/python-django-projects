@@ -1,2 +1,4 @@
 /virtual-env
 /04_channels_core/virtual-env
+/04_channels_core/.env
+/04_channels_core/data/db
