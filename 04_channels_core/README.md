@@ -1,5 +1,9 @@
 # Django docker chat app
 
+- Django channels [tutorial](https://www.youtube.com/watch?v=D43IitXdqk0&t=1s)
+
+
+### docker
  - Dockerfile (Everything is working without docker compose)
 ```
 FROM python:3.10.6-alpine3.15
@@ -38,4 +42,10 @@ sudo docker compose up -d --build
  - Remove container
 ```
 sudo docker compose down -v
+```
+ - Use [web socket king](https://websocketking.com/) for testing similer to postman for http
+- Create django superuser
+```
+sudo docker compose run web python3 manage.py migrate
+sudo docker compose run web python3 manage.py createsuperuser
 ```

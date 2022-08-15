@@ -90,7 +90,7 @@ ASGI_APPLICATION = "django_chat_core.asgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase.sqlite',
+        'NAME': 'db.sqlite3',
     }
 }
 
@@ -100,7 +100,7 @@ CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
         "CONFIG": {
-            "hosts": [("localhost", 6379)],
+            "hosts": [("db", 6379)],
         },
     },
 }

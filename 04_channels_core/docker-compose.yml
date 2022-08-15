@@ -3,6 +3,7 @@ version: "3.9"
 services:
   db:
     image: redis
+    container_name: "radis_db_con"
     volumes:
       - ./data/db:/var/lib/redis/data
     env_file:
