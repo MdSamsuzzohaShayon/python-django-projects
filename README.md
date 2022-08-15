@@ -14,3 +14,10 @@
  - Clone the repository and move to specific commit `git reset --hard hash_of_the_commit`
 
 <!-- 19:00 minutes https://www.youtube.com/watch?v=xrKKRRC518Y&list=PLLRM7ROnmA9EnQmnfTgUzCfzbbnc-oEbZ&index=2 -->
+
+
+
+
+
+
+https://www.youtube.com/watch?v=D43IitXdqk0&t=1s
