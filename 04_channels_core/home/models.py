@@ -6,7 +6,18 @@ from channels.layers import get_channel_layer
 from asgiref.sync import async_to_sync
 import json
 
+
 # Create your models here.
+
+class Students(models.Model):
+    student_name = models.CharField(max_length=100)
+    student_email = models.EmailField(max_length=100)
+    address = models.CharField(max_length=100)
+    age = models.IntegerField()
+
+    def __str__(self):
+        return self.student_name
+
 
 class Notification(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -27,4 +38,3 @@ class Notification(models.Model):
             }
         )
         super(Notification, self).save(*args, **kwargs)
-
