@@ -2,3 +2,6 @@
 /04_channels_core/virtual-env
 /04_channels_core/.env
 /04_channels_core/data/db
+
+/05_async_chatroom/virtual-env
+/05_async_chatroom/.env

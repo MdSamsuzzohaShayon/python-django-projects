@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  postgres_db:
+    image: postgres
+    container_name: 'postgres_db_con'
+    restart: always
+    env_file:
+      - "./.env"
+  web:
+    build: .
+    image: "django_chat_image"
+    container_name: "django_chat_app_con"
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    env_file:
+      - "./.env"
+    depends_on:
+      - postgres_db
