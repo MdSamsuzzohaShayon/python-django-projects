@@ -5,82 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30f168f1-2fbe-4be0-a4ab-69986494b1e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/trydjango.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trydjango.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/.idea/events_manage.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/events_manage/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/events_manage/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/events_manage/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/events_manage/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/events_manage/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/migrations/0002_remove_meetup_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/migrations/0003_meetup_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/migrations/0004_auto_20210810_0538.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/migrations/0005_auto_20210810_1557.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/migrations/0006_auto_20210810_1610.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/home.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/semantic.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/brand-icons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/brand-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/brand-icons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/brand-icons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/brand-icons.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/icons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/icons.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/icons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/icons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/icons.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/outline-icons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/outline-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/outline-icons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/outline-icons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/fonts/outline-icons.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/css/themes/default/assets/images/flags.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/img/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/static/js/semantic.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/templates/admin/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/templates/meetups/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/templates/meetups/includes/meetup-item.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/templates/meetups/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/templates/meetups/meetup-details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/templates/meetups/registration-success.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/meetups/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/uploads/images/20210126_171700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_manage/uploads/images/inner-peace.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,15 +93,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/shayon/Documents/python-microservices",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/shayon/Documents/python-microservices&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Shayon\Desktop\trydjango\templates" />
