@@ -1,0 +1,11 @@
+/admin/virtual-env
+/admin/.dbdata
+/admin/.env
+
+/main/virtual-env
+/main/.dbdata
+/main/.env
+
+
+/rabbitmq/.idea
+/rabbitmq/virtual-env

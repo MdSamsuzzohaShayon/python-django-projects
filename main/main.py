@@ -1,0 +1,43 @@
+from flask import Flask
+from flask_cors import CORS
+from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import UniqueConstraint
+from flask_migrate import Migrate
+
+app = Flask(__name__)
+
+# app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://shayon:shayon@mysql_main_db_ser/main"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///main_db.sqlite3"
+# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.app_context().push()
+CORS(app)
+
+db = SQLAlchemy(app)
+# migrate = Migrate(app, db, command='migrate')
+#
+#
+#
+#
+# This app will cache event from rabbitmq
+class Product(db.Model):
+    # Product will not be created in this app
+    id = db.Column(db.Integer, primary_key=True, autoincrement=False)
+    title = db.Column(db.String(200))
+    image = db.Column(db.String(200))
+
+class ProductUser(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer)
+    user_id = db.Column(db.Integer)
+
+    UniqueConstraint('user_id', 'product_id', name="user_product_unique")
+
+
+@app.route('/')
+def index():
+    return 'Hello'
+
+
+if __name__ == '__main__':
+    db.create_all()
+    app.run(debug=True, host='0.0.0.0')
