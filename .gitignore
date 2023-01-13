@@ -1,3 +1,7 @@
-/virtual-env
-.dbdata
-.env
+/admin/virtual-env
+/admin/.dbdata
+/admin/.env
+
+/main/virtual-env
+/main/.dbdata
+/main/.env

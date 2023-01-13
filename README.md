@@ -6,7 +6,7 @@
  python manage.py makemigrations
  python manage.py migrate
  ```
-- Api endpoints
+- Django admin app API endpoints
     - `/api/products` list all products `curl http://localhost:8000/api/products`
     - `/api/products` create a product `curl -X POST http://localhost:8000/api/products -H 'Content-Type: application/json' -d '{"title": "title1", "image": "image1.jpg"}'`
     - `/api/products/1` Get single product `curl http://localhost:8000/api/products/1`
@@ -23,3 +23,8 @@
   insert into products_user(id) values (1);
   insert into products_user(id) values (3);
   ```
+
+ - Flask main app API endpoints
+    - `/` testing api `curl http://localhost:8001`
+ - Was not able to use mysql with sqlalchemy due to an error. I had to use sqlite instead
+ 
