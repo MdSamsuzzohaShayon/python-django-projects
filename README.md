@@ -27,4 +27,9 @@
  - Flask main app API endpoints
     - `/` testing api `curl http://localhost:8001`
  - Was not able to use mysql with sqlalchemy due to an error. I had to use sqlite instead
+
+### Rabbitmq
+ - Create an account in [Cloud AMPQ](https://customer.cloudamqp.com/) and login
+ - Create a new free instance -> overview -> copy ampq url
+ - Completed previous 6 tutorial now [start from 7](https://www.youtube.com/watch?v=hi8DjlcbN4A&list=PLalrWAGybpB-UHbRDhFsBgXJM1g6T4IvO&index=8)
  
