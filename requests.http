@@ -1,0 +1,61 @@
+@base_url=http://localhost:8000/api
+
+### Create product test from different view than generic view
+POST {{base_url}}/
+Content-Type: application/json
+
+{
+    "title": "This Is TItle",
+    "content": "a content",
+    "my_discount": "15",
+    "price": 20
+}
+
+
+### Get a product
+GET {{base_url}}/products/8/
+Content-Type: application/json
+Authorization: Bearer 9da36fd56a246cb320bc6b2e9f0d8aa9f29b5ae7
+
+### Get product list
+GET {{base_url}}/products/
+Content-Type: application/json
+Authorization: Bearer 9da36fd56a246cb320bc6b2e9f0d8aa9f29b5ae7
+
+### Create a product
+POST {{base_url}}/products/
+Content-Type: application/json
+Authorization: Bearer 9da36fd56a246cb320bc6b2e9f0d8aa9f29b5ae7
+
+{
+    "title": "Hello This Is TItle",
+    "content": "best chair",
+    "my_discount": "15",
+    "price": 20
+}
+
+### Update a product
+PUT {{base_url}}/products/1/update/
+Content-Type: application/json
+Authorization: Bearer 9da36fd56a246cb320bc6b2e9f0d8aa9f29b5ae7
+
+{
+    "email": "assfdf@khsdjhsd.com",
+    "title": "Chair 1",
+    "price": 29
+}
+
+### Delete a product
+DELETE {{base_url}}/products/7/delete/
+Content-Type: application/json
+Authorization: Bearer 9da36fd56a246cb320bc6b2e9f0d8aa9f29b5ae7
+
+
+### Generate a token
+POST {{base_url}}/auth/
+Content-Type: application/json
+
+{
+    "username": "staff_2",
+    "password": "STest4321"
+}
