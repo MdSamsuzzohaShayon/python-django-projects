@@ -12,5 +12,5 @@ POST http://localhost:8000/api/token/refresh/
 Content-Type: application/json
 
 {
-    "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY5NzQ3MDcwMywiaWF0IjoxNjg5Njk0NzAzLCJqdGkiOiI1NGJiMzU1OTc2ODc0ZTRkOGIzMjQwNGViYzhkYzdlNSIsInVzZXJfaWQiOjF9.itXJeI07340Nzb4PMX5lY1rOOObAURoln0U5UXfeaRE"
+    "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY5NzQ3MTI3MSwiaWF0IjoxNjg5Njk1MjcxLCJqdGkiOiJjNjljNmZkNmFkNDc0ZGE1OTdmYWYwY2E4OWNjZWJhNiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoic2hheW9uIn0.U8A38EGrOMqF8orrnOcEfjTSLJnZKRnDiErB23OV5AU"
 }
