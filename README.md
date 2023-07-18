@@ -1,5 +1,6 @@
 # Django Rest framework
- - [tutorial](https://www.youtube.com/watch?v=c708Nf0cHrs&t=251s)
+ - [tutorial](https://www.youtube.com/watch?v=xjMP0hspNLE&list=PL-51WBLyFTg1gPEHotYAhNAPsisChkyTc), 
+ - [JSON Web Token Docs](https://www.django-rest-framework.org/api-guide/authentication/#json-web-token-authentication), [Simple JWT docs](https://github.com/jazzband/djangorestframework-simplejwt)
   - Product setup
     ```
     cd django_rest_framework_project/

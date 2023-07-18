@@ -1,0 +1,16 @@
+### Access token
+POST http://localhost:8000/api/token/
+Content-Type: application/json
+
+{
+    "username": "shayon",
+    "password": "Test1234"
+}
+
+### Refresh token
+POST http://localhost:8000/api/token/refresh/
+Content-Type: application/json
+
+{
+    "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY4OTc3OTcyNiwiaWF0IjoxNjg5NjkzMzI2LCJqdGkiOiI5NWFkYzFmOGIzMTY0MmVjOTE0NmVjNTU4OTkwOTI0ZSIsInVzZXJfaWQiOjF9.-TAM3IZsgirnSG5_C6350LM1nUhLZ4_Oj_wWFsFay4g"
+}
