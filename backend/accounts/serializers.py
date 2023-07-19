@@ -16,7 +16,7 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
 
     def validate(self, attrs):
         password = attrs.get("password")
-        password2=attrs.pop('password2')
+        password2 = attrs.pop('password2')
         if password != password2:
             raise serializers.ValidationError('Password did not match!')
         return attrs
@@ -24,3 +24,10 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         return User.objects.create(**validated_data)
+    
+
+class UserLoginSerializer(serializers.ModelSerializer):
+    email = serializers.EmailField()
+    class Meta:
+        model = User 
+        fields = ["email", "password"]

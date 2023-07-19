@@ -5,9 +5,21 @@ Content-Type: application/json
 Accept: application/json
 
 {
-	"name": "New User 5",
-	"email": "newuser5@example.com",
+	"name": "New User 6",
+	"email": "newuser6@example.com",
 	"password": "Test1234",
 	"password2": "Test1234",
 	"tc": "True"
+}
+
+
+
+### User login
+POST http://localhost:8000/api/user/login/
+Content-Type: application/json
+Accept: application/json
+
+{
+	"email": "newuser6@example.com",
+	"password": "Test1234"
 }
