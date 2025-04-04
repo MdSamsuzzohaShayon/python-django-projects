@@ -8,5 +8,5 @@ There are several commands which you will use to interact with migrations and Dj
 
  - `migrate`, which is responsible for applying and unapplying migrations.
  - `makemigrations`, which is responsible for creating new migrations based on the changes you have made to your models.
- - `sqlmigrate`, which displays the SQL statements for a migration.
+ - `sqlmigrate`, which displays the SQL statements for a migration. E.G. See all command made behind the scene `./manage.py sqlmigrate blog 0001`
  - `showmigrations`, which lists a project’s migrations and their status.
